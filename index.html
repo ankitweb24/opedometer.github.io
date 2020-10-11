@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/odometer-theme-car.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw=="
+    crossorigin="anonymous"
+  />
+</head>
+<body>
+    <div class="center_space">
+        <div class="room_rot" id="room">
+            <div class="odometer" id="odm">000000</div>
+            <div class="racre">
+                <span><i class="fa fa-arrow-circle-o-left"></i></span>
+                <span><i class="fa fa-motorcycle"></i></span>
+                <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </div>
+        </div>
+        <button onclick="myFunc()" id="btn">start <span><i class="fa fa-play-circle"></i></span></button>
+    </div>
+    <script src="odometer.min.js"></script>
+    <script>
+        function myFunc(){
+            setTimeout(function(){
+            odm.innerHTML = 433459;
+
+            var room_code = document.getElementById('room');
+            // var btn = document.getElementById('btn');
+            // room_code.style.display = "block";
+        });
+        }
+    </script>
+</body>
+</html>
